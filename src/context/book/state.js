@@ -3,10 +3,12 @@
 // initial state should have keys bookSearchResults and favoriteBooks
 // bookSearchResults should be an empty array
 // favoriteBooks should be the value from localStorage or an empty array if localStorage value is falsy
+const localFaveBook = localStorage.getItem("favoriteBooks")
+const favoriteBooks = localFaveBook ? JSON.parse(localFaveBook) : []
+
 const initialState = {
     bookSearchResults: [],
-    favoriteBooks: []
-    
+    favoriteBooks    
 }
 
 export default initialState
