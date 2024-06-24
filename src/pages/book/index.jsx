@@ -5,7 +5,7 @@ import styles from "./style.module.css"
 import {
   ADD_BOOK,
   REMOVE_BOOK
-} from './actions'
+} from '../../context/book/actions'
 
 export default function Book() {
   const { bookId } = useParams()
